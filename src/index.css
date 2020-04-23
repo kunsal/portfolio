@@ -79,18 +79,18 @@ code {
 }
 
 /* Tablets/Mobile landscape */
-/* @media screen and (max-width:900px) and (min-width: 601px) { */
-/* .jumbotron {
+@media screen and (max-width:900px) and (min-width: 601px) {
+.jumbotron {
     height: 450px !important;
-  } */
+  }
 
-/* .big-title {
+.big-title {
     font-size: 100px;
     font-weight: 700;
-  } */
+  }
 
-/* .small-title {
+.small-title {
     font-size: 30px;
     font-weight: 600;
-  } */
-/* } */
+  }
+ }
