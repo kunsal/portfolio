@@ -62,6 +62,10 @@ code {
   letter-spacing: 2px;
 }
 
+.background {
+  background-color: #ccc;
+}
+
 /* Mobile screen */
 @media screen and (max-width:576px) {
   .jumbotron {
