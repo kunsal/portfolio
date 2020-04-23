@@ -28,7 +28,7 @@ code {
 
 .small-title {
   font-size: 80px;
-  font-weight: 600;
+  font-weight: 700;
   
 }
 
@@ -36,6 +36,7 @@ code {
   font-size: 34px;
   letter-spacing: 10px;
   color: #ccc;
+  font-weight: 700;
 }
 
 .fixed-top .navbar-brand {
@@ -50,6 +51,19 @@ code {
   color: #ccc !important;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.lay-emphasis {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.background {
+  background-color: #ccc;
 }
 
 /* Mobile screen */
