@@ -8,7 +8,26 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-          <Jumbotron />
+        <Jumbotron />
+        <div className="container">
+          <div className="row">
+            <div className="col text-center">
+              <h2 className="title">ABOUT</h2>
+            </div>
+          </div>
+          <div className="row py-3">
+            <div className="col-md-2"></div>
+            <div className="col-md-8 col-md-offset-3">
+              <h5 className="lay-emphasis text-justify">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </h5>
+            </div>
+          </div>
+        </div>
       </React.Fragment>
     );
   }

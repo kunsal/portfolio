@@ -18,7 +18,7 @@ class Jumbotron extends Component {
           I am an Engineer
         </p>
 
-        <a className="btn btn-primary btn-lg" href="#" role="button">
+        <a className="btn btn-dark btn-lg" href="#" role="button">
           See My Portfolio
         </a>
       </div>
