@@ -11,17 +11,18 @@ class Jumbotron extends Component {
 
   render() {
     return (
-      <div className="jumbotron d-md-flex flex-md-column justify-content-md-center align-items-md-center">
-        <h1 className="big-title mb-400">HELLO!</h1>
-        <h2 className="small-title">MY NAME IS OLAKUNLE SALAMI</h2>
-        <p className="jumbo-text mt-3">
-          I am an Engineer
-        </p>
+      <React.Fragment>
+        <Navbar pages={pages} />
+        <div className="jumbotron d-md-flex flex-md-column justify-content-md-center align-items-md-center">
+          <h1 className="big-title mb-400">HELLO!</h1>
+          <h2 className="small-title">MY NAME IS OLAKUNLE SALAMI</h2>
+          <p className="jumbo-text mt-3">I am an Engineer</p>
 
-        <a className="btn btn-dark btn-lg" href="#" role="button">
-          See My Portfolio
-        </a>
-      </div>
+          <a className="btn btn-dark btn-lg" href="#" role="button">
+            See My Portfolio
+          </a>
+        </div>
+      </React.Fragment>
     );
   }
 }
