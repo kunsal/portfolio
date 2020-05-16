@@ -4,7 +4,7 @@ const Timeline = ({ data }) => {
   return (
     <ul class="timeline">
       {data.map(d => (
-        <li>
+        <li key={d.title}>
           <div class="timeline-badge"></div>
           <div class="timeline-panel">
             <div class="timeline-preview">

@@ -1,4 +1,10 @@
 export default [{
+    title: 'Full-stack Developer Path',
+    organisation: 'OpenClassrooms',
+    dateRange: '2020',
+    description: `Diploma in Full-stack development (in view)`
+  },
+  {
     title: 'Senior Software Developer',
     organisation: 'United Bank for Africa',
     dateRange: '2018 - Current',

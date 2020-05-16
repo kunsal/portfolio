@@ -3,7 +3,6 @@ import Navbar from './navBar';
 import Timeline from './timeline';
 import experience from '../helpers/experience';
 import Footer from './footer';
-import { Link } from 'react-router-dom';
 
 class Experience extends Component {
   state = {  }
@@ -24,11 +23,6 @@ class Experience extends Component {
             <div class="row">
               <div class="col-md-12">
                 <Timeline data={ experience } />
-                <div class="text-center">
-                  <Link class="btn btn-lg btn-gray" to="/projects">
-                    <span>See Projects</span>
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
