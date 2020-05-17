@@ -2,17 +2,17 @@ import React from "react";
 
 const Timeline = ({ data }) => {
   return (
-    <ul class="timeline">
-      {data.map(d => (
-        <li key={d.title}>
-          <div class="timeline-badge"></div>
-          <div class="timeline-panel">
-            <div class="timeline-preview">
+    <ul className="timeline">
+      {data.map((d, i) => (
+        <li key={i}>
+          <div className="timeline-badge"></div>
+          <div className="timeline-panel">
+            <div className="timeline-preview">
               <img src="assets/images/features/1.jpg" alt="" />
             </div>
-            <div class="timeline-body">
-              <h5 class="timeline-title">{ d.title }</h5>
-              <h6 class="timeline-description">
+            <div className="timeline-body">
+              <h5 className="timeline-title">{ d.title }</h5>
+              <h6 className="timeline-description">
                 { d.organisation } | { d.dateRange }
               </h6>
               <p>
@@ -23,7 +23,7 @@ const Timeline = ({ data }) => {
         </li>
       ))}
 
-      <div class="timeline-top"></div>
+      <div className="timeline-top"></div>
     </ul>
   );
 };

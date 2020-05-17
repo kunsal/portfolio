@@ -9,17 +9,17 @@ class Projects extends Component {
     return (
       <React.Fragment>
         <Navbar darkBg />
-        <section class="module module-gray" id="resume">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="m-title c-align">
+        <section className="module module-gray" id="resume">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="m-title c-align">
                   <h2>Projects</h2>
                   <h6>Works I have done</h6>
                 </div>
               </div>
             </div>
-            <div class="d-sm-flex d-md-flex flex-md-row flex-sm-column m-b-3 justify-content-md-between justify-content-sm-around">
+            <div className="d-sm-flex d-md-flex flex-md-row flex-sm-column m-b-3 justify-content-md-between justify-content-sm-around">
                 {projects.map(project => (
                   <Card title={project.title} key={project.title} text={project.text} image={project.image} link={project.link} linkTitle={project.linkTitle } />
                 ))}

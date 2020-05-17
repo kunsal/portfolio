@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import pages from '../helpers/pages';
 
 export default class Navbar extends React.Component {
@@ -35,7 +35,7 @@ export default class Navbar extends React.Component {
           </div>
         </div>
         <div className="nav-toggle">
-          <a href="#" data-toggle="collapse" data-target=".inner-navigation">
+          <a href="javascript(void)" data-toggle="collapse" data-target=".inner-navigation">
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>

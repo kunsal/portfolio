@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Navbar from "./navBar";
 import Progress from "./progress";
 import skills from "../helpers/skills";
-import kunle from '../images/kunle.jpg';
 import kunle2 from '../images/kunle2.jpg';
 import Footer from "./footer";
 class About extends Component {
@@ -11,23 +10,23 @@ class About extends Component {
     return (
       <React.Fragment>
         <Navbar darkBg />
-        <section class="module" id="profile">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="m-title c-align">
+        <section className="module" id="profile">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="m-title c-align">
                   <h2>Olakunle Salami</h2>
                   <h6>Software Engineer (Fullstack)</h6>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4">
+            <div className="row">
+              <div className="col-md-4">
                 <p>
                   <img src={kunle2} alt="Profile pix" />
                 </p>
               </div>
-              <div class="col-md-4">
+              <div className="col-md-4">
                 <h5>Profesional Profile</h5>
                 <p>
                   I am an innovative software engineer with more than 4-years
@@ -51,9 +50,9 @@ class About extends Component {
                   TravisCI, AWS, and Docker.
                 </p>
               </div>
-              <div class="col-md-4">
+              <div className="col-md-4">
                 <h5>My Skills</h5>
-                {skills.map(({title, value}) => <Progress title={title} value={value} />)}
+                {skills.map(({title, value}) => <Progress key={title} title={title} value={value} />)}
               </div>
             </div>
           </div>

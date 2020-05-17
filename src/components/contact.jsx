@@ -3,58 +3,60 @@ import Navbar from "./navBar";
 import Footer from "./footer";
 
 class Contact extends Component {
-  state = {};
+  state = {
+    response: ''
+  };
   render() {
     return (
       <React.Fragment>
         <Navbar darkBg />
-        <section class="module" id="contact">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="m-title c-align">
+        <section className="module" id="contact">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="m-title c-align">
                   <h2>Let's talk</h2>
                   <h6>Drop us a line or give me a call</h6>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
+            <div className="row">
+              <div className="col-md-8">
                 {/* <form id="contact-form" method="post" novalidate=""> */}
-                  <div class="row">
-                    <div class="form-group col-sm-4">
+                  <div className="row">
+                    <div className="form-group col-sm-4">
                       <input
-                        class="form-control"
+                        className="form-control"
                         type="text"
                         name="name"
                         placeholder="Name"
                         required=""
                       />
-                      <p class="help-block text-danger"></p>
+                      <p className="help-block text-danger"></p>
                     </div>
-                    <div class="form-group col-sm-4">
+                    <div className="form-group col-sm-4">
                       <input
-                        class="form-control"
+                        className="form-control"
                         type="email"
                         name="email"
                         placeholder="E-mail"
                         required=""
                       />
-                      <p class="help-block text-danger"></p>
+                      <p className="help-block text-danger"></p>
                     </div>
-                    <div class="form-group col-sm-4">
+                    <div className="form-group col-sm-4">
                       <input
-                        class="form-control"
+                        className="form-control"
                         type="text"
                         name="phone"
                         placeholder="Phone"
                         required=""
                       />
-                      <p class="help-block text-danger"></p>
+                      <p className="help-block text-danger"></p>
                     </div>
-                    <div class="form-group col-sm-12">
+                    <div className="form-group col-sm-12">
                       <textarea
-                        class="form-control"
+                        className="form-control"
                         name="message"
                         placeholder="Message"
                         rows="8"
@@ -62,9 +64,9 @@ class Contact extends Component {
                         style={{ height: 184 }}
                       ></textarea>
                     </div>
-                    <div class="form-group col-sm-12">
-                      <div class="text-center m-t-20">
-                        <button class="btn btn-round btn-brand" onClick={ this.handleContactSubmit }>
+                    <div className="form-group col-sm-12">
+                      <div className="text-center m-t-20">
+                        <button className="btn btn-round btn-brand" onClick={ this.handleContactSubmit }>
                           <span>Send Message</span>
                         </button>
                       </div>
@@ -73,9 +75,24 @@ class Contact extends Component {
                 {/* </form> */}
 
                 <div
-                  class="ajax-response text-center"
+                  className="ajax-response text-center"
                   id="contact-response"
-                ></div>
+                >{this.state.response}</div>
+              </div>
+              <div className="col-md-4">
+                <div className="card">
+                  <div className="card-body">
+                    <h4 className="card-title">Phone Number</h4>
+                    <p className="card-text">08039356925</p>
+                  </div>
+                </div>
+
+                <div className="card">
+                  <div className="card-body">
+                    <h4 className="card-title">Email Address</h4>
+                    <p className="card-text">kunsal2003@gmail.com</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -86,7 +103,7 @@ class Contact extends Component {
   }
 
   handleContactSubmit = () => {
-    alert('Hello kay');
+    this.setState({response: 'Thank you for contacting me. I will get back to you as soon as possible'});
   } 
 }
 

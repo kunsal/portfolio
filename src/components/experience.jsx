@@ -10,18 +10,18 @@ class Experience extends Component {
     return ( 
       <React.Fragment>
         <Navbar darkBg />
-        <section class="module module-gray" id="resume">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="m-title c-align">
+        <section className="module module-gray" id="resume">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="m-title c-align">
                   <h2>My Experience</h2>
                   <h6>Education & Work</h6>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
+            <div className="row">
+              <div className="col-md-12">
                 <Timeline data={ experience } />
               </div>
             </div>
