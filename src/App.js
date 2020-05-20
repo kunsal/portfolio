@@ -26,7 +26,6 @@ function App(props) {
         <Redirect to="/not-found" />
       </Switch> 
     </div> 
-    
   </Router> 
   );
 }

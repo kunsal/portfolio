@@ -13,7 +13,7 @@ class Home extends Component {
         >
           <div className="container">
             <div className="row">
-              <div className="col-md-6 text-left">
+              <div className="col-md-12 text-right">
                 <h1 className="h1 m-b-15">
                   Olakunle
                   <br /> Salami

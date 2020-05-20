@@ -4,7 +4,12 @@ import Footer from "./footer";
 
 class Contact extends Component {
   state = {
-    response: ''
+    response: '',
+    error: '',
+    email: '',
+    name: '',
+    message: '',
+    phone: ''
   };
   render() {
     return (
@@ -22,7 +27,7 @@ class Contact extends Component {
             </div>
             <div className="row">
               <div className="col-md-8">
-                {/* <form id="contact-form" method="post" novalidate=""> */}
+                {/* <form> */}
                   <div className="row">
                     <div className="form-group col-sm-4">
                       <input
@@ -41,6 +46,7 @@ class Contact extends Component {
                         name="email"
                         placeholder="E-mail"
                         required=""
+                        // onKeyUp={text => handleOnKeyup(text, 'email')}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -73,11 +79,13 @@ class Contact extends Component {
                     </div>
                   </div>
                 {/* </form> */}
-
+                {this.state.response ? 
                 <div
-                  className="ajax-response text-center"
+                  className="alert alert-success text-center"
                   id="contact-response"
                 >{this.state.response}</div>
+                :''}
+                
               </div>
               <div className="col-md-4">
                 <div className="card">
@@ -102,8 +110,14 @@ class Contact extends Component {
     );
   }
 
+  handleOnKeyup = (value, type) => {
+    if (value === '') {
+      
+    }
+  }
+
   handleContactSubmit = () => {
-    this.setState({response: 'Thank you for contacting me. I will get back to you as soon as possible'});
+    this.setState({response: 'Thank you for contacting me. I will get back to shortly'});
   } 
 }
 
