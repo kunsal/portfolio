@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body {
   margin: 0;
@@ -8,89 +9,78 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.jumbotron {
-  height: 80vh !important;
-  background-image: url(./images/hp-omen.jpg);
-  background-size: cover;
-  background-position: bottom right;
+.header-dark {
+  background-color: black;
   color: #fff;
 }
 
-.big-title {
-  font-size: 180px;
-  font-weight: 700;
+#home {
+  background-image: url('./images/macbook-code.jpg');
 }
 
-.small-title {
-  font-size: 80px;
-  font-weight: 600;
-  
+.h1 {
+  font-size: 45px !important;
 }
 
-.jumbo-text {
-  font-size: 34px;
-  letter-spacing: 10px;
-  color: #ccc;
+.social-icons .fa {
+  color: #fff;
 }
 
-.fixed-top .navbar-brand {
-  color: #fff !important;
-  font-weight: 800;
+.social-icons li {
+  margin-left: 20px;
+}
+
+.form-control {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-color: #cccaca;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 25px;
+  letter-spacing: 2px;
+  font-family: "Montserrat", Arial, serif;
+  font-size: .625rem;
+  padding: 1rem 0;
 }
 
-.fixed-top .nav-link {
-  color: #ccc !important;
-  text-transform: uppercase;
-  font-weight: 600;
+.form-control:focus {
+  box-shadow: none;
+  border-color: #94c394;
+  background: transparent;
 }
 
-/* Mobile screen */
-@media screen and (max-width:576px) {
-  .jumbotron {
-    height: 40vh !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .big-title {
-    font-size: 60px;
-    font-weight: 700;
-  }
-
-  .small-title {
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .jumbo-text {
-    font-size: 14px;
-    letter-spacing: 5px;
-  }
+.footer {
+  position: static;
 }
 
-/* Tablets/Mobile landscape */
-/* @media screen and (max-width:900px) and (min-width: 601px) { */
-/* .jumbotron {
-    height: 450px !important;
-  } */
+.inner-nav > ul > li > a > .menu-item-span {
+  font-weight: bolder;
+}
 
-/* .big-title {
-    font-size: 100px;
-    font-weight: 700;
-  } */
+@media (max-width: 992px) {
+  .wrapper {
+      padding-top: 0;
+  }
 
-/* .small-title {
-    font-size: 30px;
-    font-weight: 600;
-  } */
-/* } */
+  .nav-toggle {
+    top: -70px;
+    right: 10px;;
+  }
+
+  .nav-toggle > a span {
+    background: #ffffff;
+  }
+
+  .header-light {
+    background-color: transparent; 
+  }
+
+  .module-header {
+    height: 700px;
+  }
+
+  .h1 {
+    font-size: 25px !important;
+  }
+}

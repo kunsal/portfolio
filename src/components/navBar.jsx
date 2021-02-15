@@ -1,43 +1,48 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import pages from '../helpers/pages';
 
 export default class Navbar extends React.Component {
   render() {
-    const {pages} = this.props;
+    const { darkBg } = this.props;
+    let headerClass = 'header header-center ';
+    if (darkBg) {
+      headerClass += 'header-dark';
+    } else {
+      headerClass += 'header-light'
+    }
     return (
-      
-      <nav className="navbar navbar-expand-md navbar-light fixed-top bg-transparent">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            Kaytivity
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          
-            
-         
-          <div className="collapse navbar-collapse" id="navbarCollapse">
-            
-              <ul className="navbar-nav mr-auto pull-right">
+      <header className={headerClass}>
+        <div className="container-fluid">
+          <div className="inner-header">
+            <a className="inner-brand" href="/" style={{ fontSize: 22, color: '#fff', fontWeight: 'bolder' }}>
+              <strong>Kaytivity</strong>  
+            </a>
+          </div>
+
+          <div className="inner-navigation collapse">
+            <div className="inner-nav onepage-nav">
+              <ul>
                 {pages.map(page => (
                   <li className="nav-item" key={page.link}>
-                    <NavLink to={page.link} className="nav-link">{page.name}</NavLink>
+                    <NavLink to={page.link}>
+                      <span className="menu-item-span">{page.name}</span>
+                    </NavLink>
                   </li>
                 ))}
-              </ul>  
+              </ul>
+            </div>
           </div>
         </div>
-      </nav>
-      );
-    }
+        <div className="nav-toggle">
+          <a href="javascript(void)" data-toggle="collapse" data-target=".inner-navigation">
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+          </a>
+        </div>
+      </header>
+    );
   }
+}
+
