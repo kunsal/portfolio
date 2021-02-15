@@ -26,7 +26,7 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "yarn build"
   },
-  "homepage": "https://kunsal.github.io",
+  "homepage": "https://kunsal.github.io/portfolio",
   "eslintConfig": {
     "extends": "react-app"
   },
