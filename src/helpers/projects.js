@@ -1,5 +1,12 @@
 export default [
   {
+    title: 'Helpers',
+    text: 'Geolocation based social assistance platform.',
+    image: 'helpers.png',
+    link: 'https://kunsal.github.com/helpers-frontend',
+    linkTitle: 'View Project'
+  },
+  {
     title: 'UBA Marketplace',
     text: 'Online e-commerce platform owned by UBA where sellers manage their respective stores.',
     image: 'ubamarket.png',
