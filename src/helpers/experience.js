@@ -1,15 +1,17 @@
 export default [{
     title: 'Full-stack Developer Path',
-    organisation: 'OpenClassrooms',
-    dateRange: '2020',
-    description: `Diploma in Full-stack development (in view)`
+    organisation: 'OpenClassrooms International',
+    dateRange: '2021',
+    description: `Diploma in Full-Stack Development`
   },
   {
     title: 'Senior Software Developer',
     organisation: 'United Bank for Africa',
     dateRange: '2018 - Current',
     description: `I am currently the lead developer at the e-commerce unit of the bank. 
-      I built and manage UBA Marketplace (An ecommerce platform built for SMEs).`
+      I built and manage UBA Marketplace (An ecommerce platform built for SMEs) with presence in Nigeria, Ghana, Kenya,
+      Benin Republic, Congo DRC, Congo, Liberia, Sierra Leone, Cote D'Ivoire, Senegal, Mali, Chad, Burkinafaso, Cameroon, 
+      Guinea, Tanzania, Uganda, Zambia`
   },
   {
     title: 'Software Developer',
