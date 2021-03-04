@@ -5,7 +5,7 @@ import {
   Route,
   Redirect,
   Switch,
-  BrowserRouter as Router
+  HashRouter as Router
 } from 'react-router-dom';
 
 import Spinner from "./components/spinner";
