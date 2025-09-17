@@ -98,7 +98,7 @@ class Contact extends Component {
                 <div className="card">
                   <div className="card-body">
                     <h4 className="card-title">Phone Number</h4>
-                    <p className="card-text">08039356925</p>
+                    <p className="card-text">+234 803 935 6925</p>
                   </div>
                 </div>
 
