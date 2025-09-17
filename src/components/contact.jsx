@@ -4,12 +4,12 @@ import Footer from "./footer";
 
 class Contact extends Component {
   state = {
-    response: '',
-    error: '',
-    email: '',
-    name: '',
-    message: '',
-    phone: ''
+    response: "",
+    error: "",
+    email: "",
+    name: "",
+    message: "",
+    phone: "",
   };
   render() {
     return (
@@ -28,64 +28,71 @@ class Contact extends Component {
             <div className="row">
               <div className="col-md-8">
                 {/* <form> */}
-                  <div className="row">
-                    <div className="form-group col-sm-4">
-                      <input
-                        className="form-control"
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        required=""
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                    <div className="form-group col-sm-4">
-                      <input
-                        className="form-control"
-                        type="email"
-                        name="email"
-                        placeholder="E-mail"
-                        required=""
-                        // onKeyUp={text => handleOnKeyup(text, 'email')}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                    <div className="form-group col-sm-4">
-                      <input
-                        className="form-control"
-                        type="text"
-                        name="phone"
-                        placeholder="Phone"
-                        required=""
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                    <div className="form-group col-sm-12">
-                      <textarea
-                        className="form-control"
-                        name="message"
-                        placeholder="Message"
-                        rows="8"
-                        required=""
-                        style={{ height: 184 }}
-                      ></textarea>
-                    </div>
-                    <div className="form-group col-sm-12">
-                      <div className="text-center m-t-20">
-                        <button className="btn btn-round btn-brand" onClick={ this.handleContactSubmit }>
-                          <span>Send Message</span>
-                        </button>
-                      </div>
+                <div className="row">
+                  <div className="form-group col-sm-4">
+                    <input
+                      className="form-control"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      required=""
+                    />
+                    <p className="help-block text-danger"></p>
+                  </div>
+                  <div className="form-group col-sm-4">
+                    <input
+                      className="form-control"
+                      type="email"
+                      name="email"
+                      placeholder="E-mail"
+                      required=""
+                      // onKeyUp={text => handleOnKeyup(text, 'email')}
+                    />
+                    <p className="help-block text-danger"></p>
+                  </div>
+                  <div className="form-group col-sm-4">
+                    <input
+                      className="form-control"
+                      type="text"
+                      name="phone"
+                      placeholder="Phone"
+                      required=""
+                    />
+                    <p className="help-block text-danger"></p>
+                  </div>
+                  <div className="form-group col-sm-12">
+                    <textarea
+                      className="form-control"
+                      name="message"
+                      placeholder="Message"
+                      rows="8"
+                      required=""
+                      style={{ height: 184 }}
+                    ></textarea>
+                  </div>
+                  <div className="form-group col-sm-12">
+                    <div className="text-center m-t-20">
+                      <button
+                        disabled="true"
+                        className="btn btn-round btn-brand"
+                        onClick={this.handleContactSubmit}
+                      >
+                        <span>Send Message</span>
+                      </button>
                     </div>
                   </div>
+                </div>
                 {/* </form> */}
-                {this.state.response ? 
-                <div
-                  className="alert alert-success text-center"
-                  id="contact-response"
-                >{this.state.response}</div>
-                :''}
-                
+                {this.state.response ? (
+                  <div
+                    className="alert alert-success text-center"
+                    id="contact-response"
+                  >
+                    {this.state.response}
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
               <div className="col-md-4">
                 <div className="card">
@@ -111,14 +118,15 @@ class Contact extends Component {
   }
 
   handleOnKeyup = (value, type) => {
-    if (value === '') {
-      
+    if (value === "") {
     }
-  }
+  };
 
   handleContactSubmit = () => {
-    this.setState({response: 'Thank you for contacting me. I will get back to shortly'});
-  } 
+    this.setState({
+      response: "Thank you for contacting me. I will get back to shortly",
+    });
+  };
 }
 
 export default Contact;

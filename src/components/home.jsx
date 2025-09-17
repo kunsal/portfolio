@@ -18,7 +18,9 @@ class Home extends Component {
                   Olakunle
                   <br /> Salami
                 </h1>
-                <h1 className="h6 m-b-40">Software Engineer (Fullstack)</h1>
+                <h1 className="h6 m-b-40">
+                  Senior Software Engineer (Fullstack - BE Heavy)
+                </h1>
                 <p className="m-b-80">
                   <Link to="/about" className="btn btn-brand">
                     <span>More About Me</span>
